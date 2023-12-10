@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+  <meta
+ 
+charset="UTF-8">
+  <meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('https://d12oja0ew7x0i8.cloudfront.net/images/Article_Images/ImageForArticle_21371_16457084545525256.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="button-container">
+      <a href="{{ url_for('task_management') }}" class="btn btn-primary btn-lg">Task Management</a>
+    </div>
+  </div>
+</body>
+</html>
