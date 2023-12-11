@@ -76,7 +76,7 @@ def send_slack(task):
 def get_task_by_name_and_email(name, email):
     return Task1.query.filter_by(name=name, email=email).first()
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
